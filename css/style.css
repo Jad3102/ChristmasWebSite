@@ -1,0 +1,74 @@
+#teste {
+    background-color: #e2d0ad;
+}
+
+section {
+   height: 600px;
+   margin-top: 5%;
+   text-align: justify;
+}
+
+.title {
+    font-family: "Poppins", sans-serif;
+    color: #006400;
+    
+}
+.nav .nav-link {
+    color: black; 
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+  }
+  
+  .nav .nav-item .nav-link:hover {
+    color: #006400; /* Cor do hover */
+  }
+  
+
+.welcome{
+    background-image: url(../imagens/fundo\ 1.webp);
+    background-size: cover;
+    padding: 150px;
+    
+}
+
+
+.welcome h1{
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(92, 12, 12);
+    margin-top: 200px;
+}
+.welcome h2{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(92, 12, 12);
+}
+
+#formulario{
+    background-image: url(../imagens/fundo\ 2.jpg);
+    background-size: cover;
+    padding: 150px;
+}
+
+
+.product-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.product-price {
+    font-size: 1.1em;
+    color: green;
+    margin-top: 5px;
+}
