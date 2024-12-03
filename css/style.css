@@ -1,74 +1,238 @@
-#teste {
-    background-color: #e2d0ad;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-section {
-   height: 600px;
-   margin-top: 5%;
-   text-align: justify;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e2d0ad !important;
 }
 
-.title {
-    font-family: "Poppins", sans-serif;
-    color: #006400;
-    
+header {
+    background: #333;
+    color: white;
 }
-.nav .nav-link {
-    color: black; 
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: black;
     font-family: "Poppins", sans-serif;
     font-size: 30px;
-  }
-  
-  .nav .nav-item .nav-link:hover {
-    color: #006400; /* Cor do hover */
-  }
-  
+    background-color: #e2d0ad;
+    width: 100%; 
+}
 
-.welcome{
-    background-image: url(../imagens/fundo\ 1.webp);
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    width: 100%;
+    padding: 0;  
+    margin: 0;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color:#006400;
+    font-size: 26px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.banner,
+.historia,
+.musica {
+    text-align: center;
+    color: rgb(92, 12, 12);
+    padding: 280px 100px;
     background-size: cover;
-    padding: 150px;
-    
+    background-position: center;
+}
+
+.banner {
+    background-image: url('../imagens/fundo1.png');
+}
+
+.historia {
+    background-image: url('../imagens/snowman2.png');
+}
+
+.historia .wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.historia h2,
+.historia p {
+    text-align: center;
+    line-height: 2;
+    /* Espaçamento entre as linhas */
+}
+
+.galeria {
+    text-align: center;
+    padding: 100px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #006400;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-row img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.formulario {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #006400;
+    background:
+        url('../imagens/azevinho.png') repeat-y left center,
+        url('../imagens/azevinho.png') repeat-y left center;
+    background-size: auto 100%;
+}
+
+.formulario .right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: url('../imagens/azevinho.png') repeat-y left center;
+    background-size: auto 100%;
+    transform: scaleX(-1);
+    z-index: -1;
 }
 
 
-.welcome h1{
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: #006400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #538979;
+}
+
+label {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #538979;
+}
+
+button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 300px !important;
+    margin-top: 20px !important
+}
+
+button:hover {
+    background: #304e45;
+}
+
+.musica {
+    position: relative;
+    background-image: url('../imagens/fundo6.jpeg');
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+}
+
+.music-icon {
+    font-size: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logo {
     font-size: 50px;
     font-family: "Poppins", sans-serif;
     color: rgb(92, 12, 12);
-    margin-top: 200px;
+    padding-top: 90px;
 }
-.welcome h2{
+
+.bordao {
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     color: rgb(92, 12, 12);
+    margin-top: 20px
 }
 
-#formulario{
-    background-image: url(../imagens/fundo\ 2.jpg);
-    background-size: cover;
-    padding: 150px;
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .gallery-row {
+        justify-content: space-between;
+    }
+
+    .gallery-row img {
+        width: 48%;
+    }
 }
 
-
-.product-item {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-.product-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.product-name {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-.product-price {
-    font-size: 1.1em;
-    color: green;
-    margin-top: 5px;
+@media (max-width: 480px) {
+    .gallery-row img {
+        width: 100%;
+    }
 }
