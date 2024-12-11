@@ -26,13 +26,23 @@ header {
     width: 100%; 
 }
 
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .menu {
     list-style: none;
     display: flex;
     gap: 35px;
     justify-content: center;
     width: 100%;
-    padding: 0;  
+    padding: 0;
     margin: 0;
 }
 
@@ -42,15 +52,10 @@ header {
 
 .menu a {
     text-decoration: none;
-    color:#006400;
+    color: #006400;
     font-size: 26px;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
 .banner,
 .historia,
 .musica {
@@ -231,14 +236,13 @@ button:hover {
         flex-direction: column;
     }
 
-    .menu.active {
+    .menu-toggle-checkbox:checked + .menu-toggle + .menu {
         display: flex;
     }
 
     .menu-toggle {
         display: block;
     }
-
     .gallery-row {
         justify-content: space-between;
     }
