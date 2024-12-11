@@ -51,7 +51,6 @@ header {
     font-size: 24px;
     cursor: pointer;
 }
-
 .banner,
 .historia,
 .musica {
@@ -74,26 +73,22 @@ header {
     max-width: 600px;
     margin: 0 auto;
 }
-
-.historia h2,
 .historia p {
+    text-align: justify
+}
+.historia h2,
+.historia {
     text-align: center;
     line-height: 2;
     /* Espaçamento entre as linhas */
 }
 
-.galeria {
+.galery {
     text-align: center;
     padding: 100px 20px;
     font-family: "Poppins", sans-serif;
-    color: #006400;
-}
-
-.gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    color: rgb(92, 12, 12);
+    margin: 5%;
 }
 
 .gallery-row img {
@@ -102,6 +97,28 @@ header {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+    height: 200px;
+}
+
+.gallery-row {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.gallery-row .card {
+    padding: 15px;
+    display: inline-block;
+    background-color:  #897044;
+    color: white;
+    text-align: center;
+    
+}
+
+.gallery-row .card .btn{
+    background-color: #fc0000;
+    color: white;
+    font-size: 15px;
 }
 
 .formulario {
